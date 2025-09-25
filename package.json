@@ -1,0 +1,24 @@
+{
+  "name": "luz-project",
+  "version": "1.0.0",
+  "description": "Luz项目 - Git代码推送和Vercel部署演示",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "git",
+    "vercel",
+    "deployment",
+    "static-site"
+  ],
+  "author": "Luz Project",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artjetca/luz.git"
+  },
+  "homepage": "https://github.com/artjetca/luz#readme"
+}

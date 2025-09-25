@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz 项目</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #fff;
+        }
+        .steps {
+            list-style: none;
+            padding: 0;
+        }
+        .steps li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 50px;
+        }
+        .steps li::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            background: #fff;
+            color: #667eea;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .steps {
+            counter-reset: step-counter;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Luz 项目</h1>
+        
+        <div class="feature">
+            <h2>📋 项目说明</h2>
+            <p>这是一个示例项目，用于演示 Git 代码推送流程和 Vercel 部署。本项目展示了如何使用 Git 进行代码版本控制和推送操作。</p>
+        </div>
+
+        <div class="feature">
+            <h2>🚀 开始使用</h2>
+            <ol class="steps">
+                <li>克隆项目到本地</li>
+                <li>添加或修改代码</li>
+                <li>提交更改到 Git</li>
+                <li>推送到远程仓库</li>
+                <li>部署到 Vercel</li>
+            </ol>
+        </div>
+
+        <div class="feature">
+            <h2>🤝 贡献指南</h2>
+            <p>欢迎提交 Pull Request 和 Issue。我们期待您的贡献！</p>
+        </div>
+
+        <div class="feature">
+            <h2>⚡ 技术栈</h2>
+            <p>• HTML5 & CSS3<br>
+               • Git 版本控制<br>
+               • Vercel 部署平台</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Luz 项目 - 部署于 Vercel</p>
+    </footer>
+</body>
+</html>
