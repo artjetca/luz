@@ -31,3 +31,4 @@ dist/
 build/
 *.tgz
 *.tar.gz
+.vercel
